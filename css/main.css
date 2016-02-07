@@ -6,13 +6,32 @@
  *****************************************************************************/
 
 html {
-     font-family: sans-serif;
-	 color: green;
+    padding: 0; 
+	font-family: sans-serif;
+	background-color: rgba(0, 153, 204, 0.8);
  }
 
-header img {
-	width: 100%;
-	height: auto;
+header {
+	min-height: 200px;
+	background-image: url('../img/official_header.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+header p {
+	margin: 10px;
+}
+
+body {
+	margin: 5px;
+}
+
+h1, h2 {
+	font-family: 'Freckle Face', cursive;
+	margin: 5px;
+	text-shadow: 0px 2px 3px gray;
+	font-size: 200%;
 }
 
 nav ul {
@@ -22,7 +41,6 @@ nav ul {
 	overflow: hidden;
 	background-color: rgb(0, 179, 0);
 	border: solid black 1px;
-	
 }
 
 nav ul li {
@@ -38,28 +56,55 @@ nav li a {
 }
 
 nav li a:hover {
-	background-color: rgb(0, 203, 255);
+	background-color: rgb(0, 204, 255);
 	font-weight: bold;
 }
 
 #social { 
 	position: fixed;
     right: 0;
-    width: 25%;
+    width: 75px;
     border: 3px solid #73AD21;
-	background-color: rgba(204, 255, 204, 0.4);
+	background-color: rgba(204, 255, 204, 0.7);
+	padding: 1rem;
+	transition: 2s width;
+}
+
+#social ul {
+	list-style-type: none;
+	display: inline;
+}
+
+#social:hover {
+	width: 175px;
+}
+
+.download-button {
+	background-color: rgb(0, 179, 0);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.lead {
+	font-size: 125%;
+}
+
+table {
 	padding: 1rem;
 }
 
-#about ul li {
-	list-style-type: none;
-	float: left;
-	margin: 1rem;
-}
-
-#about img {
+.headshot {
 	width:150px;
 	height:auto;
+}
+
+footer {
+	position: static;
 }
 
 footer p {
